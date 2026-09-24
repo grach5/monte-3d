@@ -1,4 +1,9 @@
 node_modules/
 shots/
 shots-m/
+shots-live/
+shots-pages/
+shots-pm/
+tools/probe*.mjs
+tools/t-*.png
 .DS_Store

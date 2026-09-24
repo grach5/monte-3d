@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img"
+     aria-label="Схема габаритов: «Квадро», 500×500×60 мм">
+  <style>
+    .bg   { fill: #F0F3F6; }
+    .face { fill: #FFFFFF; stroke: #6B7278; stroke-width: 1.6; stroke-linejoin: round; }
+    .face--top  { fill: #E7EBEF; }
+    .face--side { fill: #DDE2E7; }
+    .ext  { stroke: #9AA1A8; stroke-width: 1; }
+    .ttl  { fill: #23262A; font: 500 27px/1 Georgia, 'Times New Roman', serif; }
+    .lbl  { fill: #6B7278; font: 400 13px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+            letter-spacing: .09em; text-transform: uppercase; }
+    .dim  { fill: #4A4F55; font: 400 15px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #101213; }
+      .face { fill: #202326; stroke: #6B7278; }
+      .face--top  { fill: #282C30; }
+      .face--side { fill: #191C1E; }
+      .ttl  { fill: #EDEFF1; }
+      .lbl  { fill: #9AA1A8; }
+      .dim  { fill: #C3C8CD; }
+      .ext  { stroke: #6B7278; }
+    }
+  </style>
+  <rect class="bg" width="800" height="600"/>
+  <text class="lbl" x="56" y="52">Схема габаритов · размеры в мм</text>
+  <text class="ttl" x="56" y="88">«Квадро»</text>
+  <polygon class="face face--top" points="190.0,256.3 467.8,256.3 606.7,139.7 328.9,139.7"/>
+  <polygon class="face face--side" points="467.8,289.7 606.7,173.0 606.7,139.7 467.8,256.3"/>
+  <polygon class="face" points="190.0,289.7 467.8,289.7 467.8,256.3 190.0,256.3"/>
+  <text class="dim" x="328.9" y="319.7" text-anchor="middle">500</text>
+  <text class="dim" x="176.0" y="278.0" text-anchor="end">60</text>
+  <text class="dim" x="618.7" y="203.0" text-anchor="start">500</text>
+  <line class="ext" x1="190.0" y1="297.7" x2="190.0" y2="311.7"/>
+  <line class="ext" x1="467.8" y1="297.7" x2="467.8" y2="311.7"/>
+  <line class="ext" x1="190.0" y1="304.7" x2="467.8" y2="304.7"/>
+  <text class="lbl" x="56" y="556">плитка тротуарная · чертёж по размерам прайса</text>
+</svg>

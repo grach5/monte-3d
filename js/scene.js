@@ -69,9 +69,14 @@ window.MonteScene = (function () {
     map.wrapS = map.wrapT = THREE.RepeatWrapping;
     map.encoding = THREE.sRGBEncoding;
     map.anisotropy = renderer.capabilities.getMaxAnisotropy();
+    // См. model.js: мипмапы из canvas местами отдают чёрную текстуру.
+    map.generateMipmaps = false;
+    map.minFilter = THREE.LinearFilter;
 
     var bump = new THREE.CanvasTexture(c);
     bump.wrapS = bump.wrapT = THREE.RepeatWrapping;
+    bump.generateMipmaps = false;
+    bump.minFilter = THREE.LinearFilter;
     return { map: map, bump: bump };
   }
   var maps = concreteMaps();

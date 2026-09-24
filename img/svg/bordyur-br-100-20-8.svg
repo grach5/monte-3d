@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img"
+     aria-label="Схема габаритов: БР 100.20.8, 1000×200×80 мм">
+  <style>
+    .bg   { fill: #F0F3F6; }
+    .face { fill: #FFFFFF; stroke: #6B7278; stroke-width: 1.6; stroke-linejoin: round; }
+    .face--top  { fill: #E7EBEF; }
+    .face--side { fill: #DDE2E7; }
+    .ext  { stroke: #9AA1A8; stroke-width: 1; }
+    .ttl  { fill: #23262A; font: 500 27px/1 Georgia, 'Times New Roman', serif; }
+    .lbl  { fill: #6B7278; font: 400 13px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+            letter-spacing: .09em; text-transform: uppercase; }
+    .dim  { fill: #4A4F55; font: 400 15px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #101213; }
+      .face { fill: #202326; stroke: #6B7278; }
+      .face--top  { fill: #282C30; }
+      .face--side { fill: #191C1E; }
+      .ttl  { fill: #EDEFF1; }
+      .lbl  { fill: #9AA1A8; }
+      .dim  { fill: #C3C8CD; }
+      .ext  { stroke: #6B7278; }
+    }
+  </style>
+  <rect class="bg" width="800" height="600"/>
+  <text class="lbl" x="56" y="52">Схема габаритов · размеры в мм</text>
+  <text class="ttl" x="56" y="88">БР 100.20.8</text>
+  <polygon class="face face--top" points="190.0,257.7 571.8,257.7 610.0,225.7 228.2,225.7"/>
+  <polygon class="face face--side" points="571.8,288.3 610.0,256.2 610.0,225.7 571.8,257.7"/>
+  <polygon class="face" points="190.0,288.3 571.8,288.3 571.8,257.7 190.0,257.7"/>
+  <text class="dim" x="380.9" y="318.3" text-anchor="middle">1000</text>
+  <text class="dim" x="176.0" y="278.0" text-anchor="end">80</text>
+  <text class="dim" x="622.0" y="246.7" text-anchor="start">200</text>
+  <line class="ext" x1="190.0" y1="296.3" x2="190.0" y2="310.3"/>
+  <line class="ext" x1="571.8" y1="296.3" x2="571.8" y2="310.3"/>
+  <line class="ext" x1="190.0" y1="303.3" x2="571.8" y2="303.3"/>
+  <text class="lbl" x="56" y="556">бордюр тротуарный · чертёж по размерам прайса</text>
+</svg>

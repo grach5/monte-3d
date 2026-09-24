@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img"
+     aria-label="Схема комплекта «Старый город»: элементы 115×57 · 115×115 · 115×172 мм, толщина 60 мм">
+  <style>
+    .bg   { fill: #F0F3F6; }
+    .el   { fill: #FFFFFF; stroke: #888E94; stroke-width: 1.6; }
+    .lay  { fill: #D3D8DD; }
+    .ttl  { fill: #23262A; font: 500 27px/1 Georgia, 'Times New Roman', serif; }
+    .lbl  { fill: #6B7278; font: 400 13px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+            letter-spacing: .09em; text-transform: uppercase; }
+    .dim  { fill: #4A4F55; font: 400 15px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .bg  { fill: #101213; }
+      .el  { fill: #202326; stroke: #6B7278; }
+      .lay { fill: #353A40; }
+      .ttl { fill: #EDEFF1; }
+      .lbl { fill: #9AA1A8; }
+      .dim { fill: #C3C8CD; }
+    }
+  </style>
+  <rect class="bg" width="800" height="600"/>
+  <text class="lbl" x="64" y="46">Комплект · 3 элемента · толщина 60 мм</text>
+  <text class="ttl" x="64" y="80">Плитка «Старый город»</text>
+  <rect class="el" x="163.4" y="223.0" width="127.0" height="63.0" rx="2"/>
+  <text class="dim" x="227.0" y="312.0" text-anchor="middle">115×57</text>
+  <rect class="el" x="336.5" y="159.0" width="127.0" height="127.0" rx="2"/>
+  <text class="dim" x="400.0" y="312.0" text-anchor="middle">115×115</text>
+  <rect class="el" x="509.5" y="96.0" width="127.0" height="190.0" rx="2"/>
+  <text class="dim" x="573.0" y="312.0" text-anchor="middle">115×172</text>
+  <text class="lbl" x="64" y="352">Укладка вразбежку</text>
+  <rect class="lay" x="64.0" y="372.0" width="152.6" height="101.4" rx="1.5"/>
+  <rect class="lay" x="218.6" y="372.0" width="49.2" height="101.4" rx="1.5"/>
+  <rect class="lay" x="269.9" y="372.0" width="49.2" height="101.4" rx="1.5"/>
+  <rect class="lay" x="321.1" y="372.0" width="152.6" height="101.4" rx="1.5"/>
+  <rect class="lay" x="475.7" y="372.0" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="579.1" y="372.0" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="682.5" y="372.0" width="49.2" height="101.4" rx="1.5"/>
+  <rect class="lay" x="64.0" y="475.4" width="152.6" height="101.4" rx="1.5"/>
+  <rect class="lay" x="218.6" y="475.4" width="152.6" height="101.4" rx="1.5"/>
+  <rect class="lay" x="373.3" y="475.4" width="152.6" height="101.4" rx="1.5"/>
+  <rect class="lay" x="527.9" y="475.4" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="631.3" y="475.4" width="101.4" height="101.4" rx="1.5"/>
+</svg>

@@ -76,6 +76,15 @@
     var glc = document.getElementById('gl');
     if (glc) setTimeout(function () { glc.classList.add('on'); }, 120);
 
+    if (!document.querySelector('.hero__h')) {
+      // Внутренние страницы: вступительного ролика нет, раскрываем заголовок раздела
+      gsap.to('.phero h1 .ln i', { y: '0%', duration: 1.05, ease: 'power3.out', stagger: 0.075, delay: 0.1 });
+      gsap.fromTo('.phero__lead, .phero__facts', { opacity: 0, y: 16 },
+        { opacity: 1, y: 0, duration: .9, ease: 'power3.out', stagger: .08, delay: 0.25 });
+      heroCounts.forEach(function (t) { t.play(0); });
+      ScrollTrigger.refresh();
+      return;
+    }
     var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
     tl.to('.hero__h .ln i', { y: '0%', duration: 1.15, stagger: 0.085 }, 0.15)
       .to('.hero__eyebrow', { opacity: 1, y: 0, duration: .8 }, 0.25)

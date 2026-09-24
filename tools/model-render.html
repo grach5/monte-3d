@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><title>render</title>
+<style>html,body{margin:0;background:transparent}#c{width:800px;height:640px}</style>
+</head><body>
+<div id="c"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
+<script src="../js/model.js"></script>
+<script>
+window.renderProduct = function (P) {
+  var host = document.getElementById('c');
+  host.innerHTML = '';
+  var W = 800, H = 640;
+  var r = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+  r.setPixelRatio(2); r.setSize(W, H);
+  r.outputEncoding = THREE.sRGBEncoding;
+  r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = 1.08;
+  r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
+  host.appendChild(r.domElement);
+
+  var scene = new THREE.Scene();
+  var cam = new THREE.PerspectiveCamera(30, W / H, 0.01, 60);
+  var g = MonteModel.build(P);
+  if (!g) return null;
+  var s = g.userData.size, R = Math.max(s.X, s.Y, s.Z);
+  var pivot = new THREE.Group(); pivot.add(g); scene.add(pivot);
+  pivot.rotation.y = 0.62; pivot.rotation.x = -0.1;
+
+  var sh = new THREE.Mesh(new THREE.PlaneGeometry(R * 5, R * 5), new THREE.ShadowMaterial({ opacity: 0.45 }));
+  sh.rotation.x = -Math.PI / 2; sh.position.y = -s.Y / 2 - 0.002; sh.receiveShadow = true;
+  scene.add(sh);
+
+  scene.add(new THREE.HemisphereLight(0x93a4bd, 0x0e0e10, 0.75));
+  var key = new THREE.DirectionalLight(0xfff3e4, 2.2);
+  key.position.set(R * 2.4, R * 3.2, R * 2.2); key.castShadow = true;
+  key.shadow.mapSize.set(2048, 2048);
+  var sc = key.shadow.camera;
+  sc.left = -R * 2; sc.right = R * 2; sc.top = R * 2; sc.bottom = -R * 2; sc.near = 0.01; sc.far = R * 10;
+  key.shadow.bias = -0.0008; key.shadow.normalBias = 0.004;
+  scene.add(key);
+  var fill = new THREE.DirectionalLight(0x7fa0e8, 0.55);
+  fill.position.set(-R * 2.4, R * 1.2, -R * 1.8); scene.add(fill);
+
+  cam.position.set(R * 2.4, R * 1.75, R * 2.9);
+  cam.lookAt(0, 0, 0);
+  r.render(scene, cam);
+  return r.domElement.toDataURL('image/png');
+};
+</script>
+</body></html>

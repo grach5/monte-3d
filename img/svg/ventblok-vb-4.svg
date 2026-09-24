@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img"
+     aria-label="Схема габаритов: ВБ-4, 570×300×180 мм">
+  <style>
+    .bg   { fill: #F0F3F6; }
+    .face { fill: #FFFFFF; stroke: #6B7278; stroke-width: 1.6; stroke-linejoin: round; }
+    .face--top  { fill: #E7EBEF; }
+    .face--side { fill: #DDE2E7; }
+    .ext  { stroke: #9AA1A8; stroke-width: 1; }
+    .ttl  { fill: #23262A; font: 500 27px/1 Georgia, 'Times New Roman', serif; }
+    .lbl  { fill: #6B7278; font: 400 13px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+            letter-spacing: .09em; text-transform: uppercase; }
+    .dim  { fill: #4A4F55; font: 400 15px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .bg   { fill: #101213; }
+      .face { fill: #202326; stroke: #6B7278; }
+      .face--top  { fill: #282C30; }
+      .face--side { fill: #191C1E; }
+      .ttl  { fill: #EDEFF1; }
+      .lbl  { fill: #9AA1A8; }
+      .dim  { fill: #C3C8CD; }
+      .ext  { stroke: #6B7278; }
+    }
+  </style>
+  <rect class="bg" width="800" height="600"/>
+  <text class="lbl" x="56" y="52">Схема габаритов · размеры в мм</text>
+  <text class="ttl" x="56" y="88">ВБ-4</text>
+  <polygon class="face face--top" points="190.0,247.5 522.5,247.5 610.0,174.0 277.5,174.0"/>
+  <polygon class="face face--side" points="522.5,352.5 610.0,279.0 610.0,174.0 522.5,247.5"/>
+  <polygon class="face" points="190.0,352.5 522.5,352.5 522.5,247.5 190.0,247.5"/>
+  <text class="dim" x="356.2" y="382.5" text-anchor="middle">570</text>
+  <text class="dim" x="176.0" y="305.0" text-anchor="end">180</text>
+  <text class="dim" x="622.0" y="210.8" text-anchor="start">300</text>
+  <line class="ext" x1="190.0" y1="360.5" x2="190.0" y2="374.5"/>
+  <line class="ext" x1="522.5" y1="360.5" x2="522.5" y2="374.5"/>
+  <line class="ext" x1="190.0" y1="367.5" x2="522.5" y2="367.5"/>
+  <text class="lbl" x="56" y="556">полый · чертёж по размерам прайса</text>
+</svg>

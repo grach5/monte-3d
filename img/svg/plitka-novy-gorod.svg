@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img"
+     aria-label="Схема комплекта «Новый город»: элементы 160×80 · 160×160 · 160×240 мм, толщина 60 мм">
+  <style>
+    .bg   { fill: #F0F3F6; }
+    .el   { fill: #FFFFFF; stroke: #888E94; stroke-width: 1.6; }
+    .lay  { fill: #D3D8DD; }
+    .ttl  { fill: #23262A; font: 500 27px/1 Georgia, 'Times New Roman', serif; }
+    .lbl  { fill: #6B7278; font: 400 13px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+            letter-spacing: .09em; text-transform: uppercase; }
+    .dim  { fill: #4A4F55; font: 400 15px/1 ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    @media (prefers-color-scheme: dark) {
+      .bg  { fill: #101213; }
+      .el  { fill: #202326; stroke: #6B7278; }
+      .lay { fill: #353A40; }
+      .ttl { fill: #EDEFF1; }
+      .lbl { fill: #9AA1A8; }
+      .dim { fill: #C3C8CD; }
+    }
+  </style>
+  <rect class="bg" width="800" height="600"/>
+  <text class="lbl" x="64" y="46">Комплект · 3 элемента · толщина 60 мм</text>
+  <text class="ttl" x="64" y="80">Плитка «Новый город»</text>
+  <rect class="el" x="164.0" y="222.7" width="126.7" height="63.3" rx="2"/>
+  <text class="dim" x="227.3" y="312.0" text-anchor="middle">160×80</text>
+  <rect class="el" x="336.7" y="159.3" width="126.7" height="126.7" rx="2"/>
+  <text class="dim" x="400.0" y="312.0" text-anchor="middle">160×160</text>
+  <rect class="el" x="509.3" y="96.0" width="126.7" height="190.0" rx="2"/>
+  <text class="dim" x="572.7" y="312.0" text-anchor="middle">160×240</text>
+  <text class="lbl" x="64" y="352">Укладка вразбежку</text>
+  <rect class="lay" x="64.0" y="372.0" width="49.7" height="101.4" rx="1.5"/>
+  <rect class="lay" x="115.7" y="372.0" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="219.1" y="372.0" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="322.5" y="372.0" width="49.7" height="101.4" rx="1.5"/>
+  <rect class="lay" x="374.2" y="372.0" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="477.5" y="372.0" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="580.9" y="372.0" width="153.1" height="101.4" rx="1.5"/>
+  <rect class="lay" x="64.0" y="475.4" width="153.1" height="101.4" rx="1.5"/>
+  <rect class="lay" x="219.1" y="475.4" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="322.5" y="475.4" width="49.7" height="101.4" rx="1.5"/>
+  <rect class="lay" x="374.2" y="475.4" width="49.7" height="101.4" rx="1.5"/>
+  <rect class="lay" x="425.8" y="475.4" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="529.2" y="475.4" width="101.4" height="101.4" rx="1.5"/>
+  <rect class="lay" x="632.6" y="475.4" width="49.7" height="101.4" rx="1.5"/>
+  <rect class="lay" x="684.3" y="475.4" width="49.7" height="101.4" rx="1.5"/>
+</svg>

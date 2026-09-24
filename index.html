@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>МОНТЕ — завод бетонных изделий в Артёме</title>
-<meta name="description" content="Вибропрессованные бетонные изделия: бордюр, блок, тротуарная плитка, вентблоки, кирпич. Асфальтобетон, битумные вяжущие, техника и работы. Артём, Приморский край.">
+<title>МОНТЕ — завод бетонных изделий и дорожных материалов в Артёме</title>
+<meta name="description" content="Вибропрессованные бетонные изделия, асфальтобетон, битумные вяжущие, аренда техники и работы. Артём, Приморский край. Цены открыто.">
+<link rel="icon" href="img/brand/mark-monte.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="МОНТЕ — завод бетонных изделий и дорожных материалов в Артёме">
+<meta property="og:description" content="Вибропрессованные бетонные изделия, асфальтобетон, битумные вяжущие, аренда техники и работы. Артём, Приморский край. Цены открыто.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" href="img/brand/mark-monte.png">
-<meta property="og:type" content="website">
-<meta property="og:title" content="МОНТЕ — завод бетонных изделий в Артёме">
-<meta property="og:description" content="Бордюр, блок, тротуарная плитка, вентблоки, кирпич. Асфальтобетон, битум, техника и работы. Цены открыто.">
-<meta property="og:image" content="img/product/paver-texture.jpg">
 <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<link rel="stylesheet" href="css/pages.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Стройспецтехника МОНТЕ","address":{"@type":"PostalAddress","addressLocality":"Артём","addressRegion":"Приморский край","streetAddress":"ул. Севская, 44","postalCode":"692754","addressCountry":"RU"},"telephone":"+79841915064","email":"monte@sstmonte.ru","subOrganization":[{"@type":"Organization","name":"ООО «МОНТЕ»","taxID":"2502068158"},{"@type":"Organization","name":"ООО «Стройспецтехника»","taxID":"1435300629"}]}</script>
 
-<!-- ────────── прелоадер ────────── -->
+</head>
+<body class="p-home">
 <div class="preloader" id="preloader">
   <div class="preloader__inner">
     <div class="preloader__mark">МОНТЕ</div>
@@ -26,68 +26,57 @@
     <div class="preloader__num"><span id="plNum">0</span></div>
   </div>
 </div>
-
-<!-- ────────── WebGL ────────── -->
-<canvas id="gl" aria-hidden="true"></canvas>
-<div class="scrim" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
 
-<!-- ────────── шапка ────────── -->
 <header class="nav" id="nav">
-  <a class="nav__logo" href="#top">
+  <a class="nav__logo" href="">
     <svg viewBox="0 0 34 34" class="nav__glyph" aria-hidden="true"><path d="M2 32V2h6l9 15 9-15h6v30h-6V13l-9 15-9-15v19z"/></svg>
     <span class="nav__name">МОНТЕ<i>Стройспецтехника</i></span>
   </a>
-  <nav class="nav__links">
-    <a href="#catalog">Каталог</a>
-    <a href="#proizvodstvo">Производство</a>
-    <a href="#dorogi">Дороги</a>
-    <a href="#price">Прайс</a>
-  </nav>
-  <a class="nav__tel" href="tel:+79841915064">+7 984 191-50-64<i>завод</i></a>
-  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
+  <nav class="nav__links"><div class="nav__drop">
+      <a class="nav__l" href="catalog/">Каталог<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></a>
+      <div class="mega"><div class="mega__in">
+        <a href="catalog/bordyur/"><b>Бордюрный камень</b><i>четыре типоразмера</i></a><a href="catalog/bloki/"><b>Стеновые блоки</b><i>КСР и КПР, пять позиций</i></a><a href="catalog/plitka/"><b>Тротуарная плитка</b><i>пять форматов</i></a><a href="catalog/ventblok/"><b>Вентблоки</b><i>ВБ-3 … ВБ-8</i></a><a href="catalog/kirpich/"><b>Кирпич облицовочный</b><i>250×120×60</i></a><a href="catalog/"><b>Весь каталог</b><i>22 позиции с ценами</i></a>
+      </div></div>
+    </div><a class="nav__l" href="production/">Производство</a><div class="nav__drop">
+      <a class="nav__l" href="asphalt/">Дороги и техника<svg viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg></a>
+      <div class="mega"><div class="mega__in">
+        <a href="asphalt/"><b>Асфальтобетон</b><i>60 марок, завод 120 т/ч</i></a><a href="bitum/"><b>Битумные вяжущие</b><i>эмульсии ЭБДК и мастика</i></a><a href="rent/"><b>Аренда техники</b><i>78 единиц, 9 типов</i></a><a href="works/"><b>Строительные работы</b><i>земля, дорога, благоустройство</i></a>
+      </div></div>
+    </div><a class="nav__l" href="price/">Прайс</a><a class="nav__l" href="documents/">Документы</a><a class="nav__l" href="contacts/">Контакты</a></nav>
+  <a class="nav__spec" href="spec/" id="specLink" hidden>Спецификация<b id="specCount">0</b></a>
+  <a class="nav__tel" href="tel:+79841915064">+7 (984) 191-50-64<i>завод</i></a>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
 </header>
 
 <div class="menu" id="menu">
-  <div class="menu__list">
-    <a href="#catalog"><em>01</em>Каталог</a>
-    <a href="#proizvodstvo"><em>02</em>Производство</a>
-    <a href="#dorogi"><em>03</em>Дороги и техника</a>
-    <a href="#price"><em>04</em>Прайс</a>
-    <a href="#contact"><em>05</em>Контакты</a>
-  </div>
+  <div class="menu__list"><a class="menu__a" href="catalog/"><em>01</em>Каталог</a><div class="menu__sub"><a href="catalog/bordyur/">Бордюрный камень</a><a href="catalog/bloki/">Стеновые блоки</a><a href="catalog/plitka/">Тротуарная плитка</a><a href="catalog/ventblok/">Вентблоки</a><a href="catalog/kirpich/">Кирпич облицовочный</a><a href="catalog/">Весь каталог</a></div><a class="menu__a" href="production/"><em>02</em>Производство</a><a class="menu__a" href="asphalt/"><em>03</em>Дороги и техника</a><div class="menu__sub"><a href="asphalt/">Асфальтобетон</a><a href="bitum/">Битумные вяжущие</a><a href="rent/">Аренда техники</a><a href="works/">Строительные работы</a></div><a class="menu__a" href="price/"><em>04</em>Прайс</a><a class="menu__a" href="documents/"><em>05</em>Документы</a><a class="menu__a" href="contacts/"><em>06</em>Контакты</a></div>
   <div class="menu__foot">
-    <a href="tel:+79841915064">+7 984 191-50-64 <i>завод МОНТЕ</i></a>
-    <a href="tel:+79142738200">+7 914 273-82-00 <i>Стройспецтехника</i></a>
+    <a href="tel:+79841915064">+7 (984) 191-50-64 <i>завод МОНТЕ</i></a>
+    <a href="tel:+79142738200">+7 (914) 273-82-00 <i>Стройспецтехника</i></a>
   </div>
 </div>
-
 <main id="top">
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="scrim" aria-hidden="true"></div>
 
-<!-- ────────── ЭКРАН 1 ────────── -->
 <section class="hero" id="hero">
   <div class="hero__grid">
-    <div class="hero__eyebrow" data-fade>
-      <span class="dot"></span>Артём · Приморский край · с 2016
-    </div>
-
+    <div class="hero__eyebrow" data-fade><span class="dot"></span>Артём · Приморский край · с 2016</div>
     <h1 class="hero__h">
       <span class="ln"><i>Бетон,</i></span>
       <span class="ln"><i>который держит</i></span>
       <span class="ln"><i>город.</i></span>
     </h1>
-
     <p class="hero__sub" data-fade>
       Вибропресс Hess. 9 млн изделий в год.<br>Свой асфальтобетонный завод и 78 единиц техники.
     </p>
-
     <div class="hero__cta" data-fade>
-      <a class="btn btn--accent" href="#catalog"><span>Смотреть каталог</span></a>
-      <a class="btn" href="#price"><span>Прайс от 01.09.2026</span></a>
+      <a class="btn btn--accent" href="catalog/"><span>Каталог изделий</span></a>
+      <a class="btn" href="price/"><span>Прайс от 01.09.2026</span></a>
     </div>
   </div>
-
   <div class="hero__meta">
     <div class="hero__scroll"><i></i>скролл</div>
     <ul class="hero__facts">
@@ -97,32 +86,31 @@
     </ul>
   </div>
 </section>
-
-<!-- ────────── МАНИФЕСТ ────────── -->
 <section class="manifest" id="manifest">
   <p class="manifest__t">
-    <span class="w">Завод</span> <span class="w">полного</span> <span class="w">цикла</span> <span class="w">в</span> <span class="w">Артёме:</span>
-    <span class="w">формуем</span> <span class="w">бетон,</span> <span class="w">варим</span> <span class="w">битум,</span>
-    <span class="w">выпускаем</span> <span class="w">асфальт</span> <span class="w">и</span> <span class="w">сами</span>
-    <span class="w">кладём</span> <span class="w">его</span> <span class="w">своей</span> <span class="w">техникой.</span>
+    <span class="w">Завод</span> <span class="w">полного</span> <span class="w">цикла</span> <span class="w">в</span> <span class="w">Артёме:</span> <span class="w">формуем</span> <span class="w">бетон,</span> <span class="w">варим</span> <span class="w">битум,</span> <span class="w">выпускаем</span> <span class="w">асфальт</span> <span class="w">и</span> <span class="w">сами</span> <span class="w">кладём</span> <span class="w">его</span> <span class="w">своей</span> <span class="w">техникой.</span>
   </p>
   <div class="manifest__ent">
+    
     <article data-rise>
       <em>ООО «МОНТЕ»</em>
       <h3>Производство</h3>
-      <p>Бетонные изделия на немецком вибропрессе, битумные эмульсии ЭБДК и мастика МБЗ, минеральный порошок.</p>
-      <span class="tagset"><i>21 позиция в прайсе</i><i>ИНН 2502068158</i></span>
+      <p>Собственное производство в Артёме. Бетонные изделия формуются на немецком вибропрессе, тут же выпускаются битумные эмульсии и дорожная мастика.</p>
+      <div class="manifest__links">
+        <a href="catalog/"><b>Завод бетонных изделий</b><i>Бордюр, блок, брусчатка, вентблоки, кирпич. 21 позиция в прайсе.</i></a><a href="bitum/"><b>Битумные материалы</b><i>Эмульсии ЭБДК Б, С, М и мастика МБЗ.</i></a><a href="production/"><b>Минеральный порошок</b><i>Собственное производство минерального порошка запускается на площадке в Артёме.</i></a>
+      </div>
     </article>
     <article data-rise>
       <em>ООО «Стройспецтехника»</em>
       <h3>Дороги и работы</h3>
-      <p>Асфальтобетонный завод 120 т/ч, парк из 78 единиц, земляные, дорожные и монтажные работы.</p>
-      <span class="tagset"><i>смена · вахта · подряд</i><i>ИНН 1435300629</i></span>
+      <p>Асфальтобетонная смесь со своего завода, самосвалы, экскаваторы, краны до тяжёлого класса, катки, грейдер, тралы. Работаем со сменой, вахтой и подрядом под объект.</p>
+      <div class="manifest__links">
+        <a href="asphalt/"><b>Асфальтобетонный завод</b><i>Горячая смесь, 120 тонн в час.</i></a><a href="rent/"><b>Аренда техники</b><i>Земля, подъём, дорога, перевозка.</i></a><a href="works/"><b>Строительно-монтажные работы</b><i>Земляные, дорожные и монтажные работы.</i></a>
+      </div>
     </article>
   </div>
 </section>
 
-<!-- ────────── КАТАЛОГ: горизонтальный скролл ────────── -->
 <section class="cat" id="catalog">
   <div class="cat__pin">
     <div class="cat__head">
@@ -130,110 +118,99 @@
       <h2>Пять групп<br>изделий</h2>
     </div>
     <div class="cat__track" id="catTrack">
-      <article class="cc" data-img="img/product/kerb-close.jpg">
+      
+      <article class="cc">
         <span class="cc__n">01</span>
         <div class="cc__ph"><img src="img/cut/cat-bordyur.png" alt="Бордюрный камень" loading="lazy"></div>
-        <h3>Бордюрный камень</h3>
-        <p>Тротуарный, дорожный, мостовой. Четыре типоразмера, М300 и М400.</p>
-        <span class="cc__p">от 357 ₽<i>за штуку</i></span>
+        <h3>Бордюр</h3>
+        <p>Бортовой камень от тротуарного до мостового, четыре типоразмера</p>
+        <span class="cc__p">от 357 ₽<i>за шт</i></span>
+        <a class="cc__go" href="catalog/bordyur/" aria-label="Бордюрный камень"></a>
       </article>
-      <article class="cc" data-img="img/product/block-part.jpg">
+      <article class="cc">
         <span class="cc__n">02</span>
-        <div class="cc__ph"><img src="img/cut/cat-bloki.png" alt="Стеновой отсевоблок" loading="lazy"></div>
-        <h3>Стеновые блоки</h3>
-        <p>Отсевоблок КСР и КПР по ГОСТ 6133-2019. М50, М75, М100 и перегородочные.</p>
-        <span class="cc__p">от 65 ₽<i>за штуку</i></span>
+        <div class="cc__ph"><img src="img/cut/cat-bloki.png" alt="Стеновые и перегородочные блоки" loading="lazy"></div>
+        <h3>Блоки</h3>
+        <p>Отсевоблок КСР и КПР по ГОСТ 6133-2019, пять позиций</p>
+        <span class="cc__p">от 65 ₽<i>за шт</i></span>
+        <a class="cc__go" href="catalog/bloki/" aria-label="Стеновые и перегородочные блоки"></a>
       </article>
-      <article class="cc" data-img="img/product/paver-texture.jpg">
+      <article class="cc">
         <span class="cc__n">03</span>
-        <div class="cc__ph"><img src="img/cut/cat-plitka.png" alt="Тротуарная плитка в раскладке" loading="lazy"></div>
-        <h3>Тротуарная плитка</h3>
-        <p>Пять форматов по ГОСТ 17608-2017. Серая, цветная и с мраморной крошкой.</p>
-        <span class="cc__p">от 1 300 ₽<i>за м²</i></span>
-      </article>
-      <article class="cc" data-img="img/production/curing-racks.jpg">
-        <span class="cc__n">04</span>
-        <div class="cc__ph"><img src="img/cut/cat-ventblok.png" alt="Вентиляционный блок" loading="lazy"></div>
+        <div class="cc__ph"><img src="img/cut/cat-ventblok.png" alt="Вентиляционные блоки" loading="lazy"></div>
         <h3>Вентблоки</h3>
-        <p>Шесть типов ВБ-3…ВБ-8 для каналов в кладке. Марка М75.</p>
-        <span class="cc__p">от 270 ₽<i>за штуку</i></span>
+        <p>Шесть типов вентблоков для каналов в кладке</p>
+        <span class="cc__p">от 270 ₽<i>за шт</i></span>
+        <a class="cc__go" href="catalog/ventblok/" aria-label="Вентиляционные блоки"></a>
       </article>
-      <article class="cc" data-img="img/product/wall-samples.jpg">
+      <article class="cc">
+        <span class="cc__n">04</span>
+        <div class="cc__ph"><img src="img/cut/cat-plitka.png" alt="Тротуарная плитка" loading="lazy"></div>
+        <h3>Плитка</h3>
+        <p>Пять форматов по ГОСТ 17608-2017, серая, цветная и с крошкой</p>
+        <span class="cc__p">от 1 300 ₽<i>за м²</i></span>
+        <a class="cc__go" href="catalog/plitka/" aria-label="Тротуарная плитка"></a>
+      </article>
+      <article class="cc">
         <span class="cc__n">05</span>
-        <div class="cc__ph"><img src="img/cut/cat-kirpich.png" alt="Облицовочный кирпич" loading="lazy"></div>
-        <h3>Кирпич облицовочный</h3>
-        <p>Фасадный вибропрессованный 250×120×60. Серый и цветной.</p>
-        <span class="cc__p">от 47 ₽<i>за штуку</i></span>
+        <div class="cc__ph"><img src="img/cut/cat-kirpich.png" alt="Кирпич облицовочный" loading="lazy"></div>
+        <h3>Кирпич</h3>
+        <p>Фасадный вибропрессованный кирпич 250×120×60</p>
+        <span class="cc__p">от 47 ₽<i>за шт</i></span>
+        <a class="cc__go" href="catalog/kirpich/" aria-label="Кирпич облицовочный"></a>
       </article>
       <article class="cc cc--all">
-        <h3>Изготовим<br>под заказ</h3>
-        <p>Тот же пресс, другая матрица: плитка иных форматов, фигурная брусчатка, водоотвод, нестандартный бордюр.</p>
-        <a class="btn btn--accent" href="#contact"><span>Обсудить задачу</span></a>
+        <h3>Весь каталог<br>и калькуляторы</h3>
+        <p>22 позиций с ценами, габаритные 3D-модели, расчёт объёма и поддонов по каждой.</p>
+        <a class="btn btn--accent" href="catalog/"><span>Открыть каталог</span></a>
       </article>
     </div>
     <div class="cat__bar"><i id="catBar"></i></div>
   </div>
 </section>
 
-<!-- ────────── ПРОИЗВОДСТВО ────────── -->
 <section class="prod" id="proizvodstvo">
   <div class="prod__head">
     <span class="secnum">02 / Производство</span>
     <h2 class="split"><span class="ln"><i>Немецкий пресс,</i></span><span class="ln"><i>приморский отсев</i></span></h2>
   </div>
-
   <div class="prod__rows">
     <div class="prow" data-rise>
-      <span class="prow__k">01</span>
-      <h3>Формовка</h3>
+      <span class="prow__k">01</span><h3>Формовка</h3>
       <p>Жёсткая смесь уплотняется вибрацией под давлением. Плотность выше, воды меньше, геометрия — в допуске ГОСТ.</p>
       <div class="prow__img"><img src="img/production/line-pavers.jpg" alt="Линия формовки" loading="lazy"></div>
     </div>
     <div class="prow" data-rise>
-      <span class="prow__k">02</span>
-      <h3>Твердение</h3>
+      <span class="prow__k">02</span><h3>Твердение</h3>
       <p>Камера пропарки, затем выдержка на стеллажах. Отгрузка — после набора отпускной прочности.</p>
-      <div class="prow__img"><img src="img/production/curing-racks.jpg" alt="Камера твердения: изделия на стеллажах" loading="lazy"></div>
+      <div class="prow__img"><img src="img/production/curing-racks.jpg" alt="Камера твердения" loading="lazy"></div>
     </div>
     <div class="prow" data-rise>
-      <span class="prow__k">03</span>
-      <h3>Отгрузка</h3>
+      <span class="prow__k">03</span><h3>Отгрузка</h3>
       <p>Пакетирование на поддоны, самовывоз с площадки в Артёме или доставка манипулятором и фурой.</p>
       <div class="prow__img"><img src="img/production/blocks-line.jpg" alt="Готовые блоки на поддонах" loading="lazy"></div>
     </div>
   </div>
-
   <div class="caps">
-    <div><b data-count="9">0</b><em>млн</em><span>изделий в год — проектная мощность</span></div>
-    <div><b data-count="4">0</b><em>млн</em><span>стеновых и перегородочных блоков</span></div>
-    <div><b data-count="1.2">0</b><em>млн</em><span>бордюров дорожных и тротуарных</span></div>
-    <div><b data-count="180">0</b><em>тыс. м²</em><span>тротуарной брусчатки</span></div>
+    <div><b data-count="9">0</b><em>млн</em><span>изделий в год — проектная мощность завода</span></div><div><b data-count="4">0</b><em>млн</em><span>блоков — стеновых и перегородочных</span></div><div><b data-count="1.2">0</b><em>млн</em><span>бордюров — дорожных и тротуарных</span></div><div><b data-count="180">0</b><em>тыс. м²</em><span>плитки — тротуарной брусчатки</span></div>
   </div>
-
-  <div class="award" data-rise>
-    <img src="img/brand/best-primorye-2026-light.png" alt="Знак «Лучший товар Приморья 2026»">
-    <div>
-      <h3>Лучший товар Приморья 2026</h3>
-      <p>Звание присвоено камню стеновому пустотелому, бордюру дорожному и тротуарному и плитке бетонной тротуарной. Письмо Росстандарта № 43/09/2599 от 09.07.2026.</p>
-    </div>
-  </div>
+  <a class="wide-link" href="production/"><b>Как устроено производство</b><i>линия, камера твердения, контроль и отгрузка</i><svg viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5"/></svg></a>
 </section>
 
-<!-- ────────── ДОРОГИ ────────── -->
 <section class="road" id="dorogi">
   <div class="road__bg"><img src="img/objects/asphalt-night.jpg" alt="Укладка асфальта" loading="lazy"></div>
   <div class="road__in">
     <span class="secnum">03 / Дороги и техника</span>
     <h2 class="split"><span class="ln"><i>От смеси</i></span><span class="ln"><i>до сданного</i></span><span class="ln"><i>участка</i></span></h2>
     <div class="road__cols">
-      <article data-rise><b>120 т/ч</b><h3>Асфальтобетон</h3><p>Горячая смесь со своего завода. Отгрузка самосвалами и укладка своим звеном.</p></article>
-      <article data-rise><b>78</b><h3>Парк техники</h3><p>Самосвалы, экскаваторы, краны, катки, грейдер, тралы. Смена, вахта, подряд под объект.</p></article>
-      <article data-rise><b>ЭБДК</b><h3>Битумные вяжущие</h3><p>Эмульсии марок Б, С, М и дорожная мастика МБЗ собственного производства.</p></article>
+      <a href="asphalt/" data-rise><b>120 т/ч</b><h3>Асфальтобетон</h3><p>57 марок со своего завода, от 6 850 ₽ за тонну.</p><span>Смотреть →</span></a>
+      <a href="bitum/" data-rise><b>ЭБДК</b><h3>Битумные вяжущие</h3><p>Эмульсии трёх скоростей распада и мастика МБЗ.</p><span>Смотреть →</span></a>
+      <a href="rent/" data-rise><b>78</b><h3>Аренда техники</h3><p>Экскаваторы, краны, самосвалы, катки, грейдер, тралы.</p><span>Смотреть →</span></a>
+      <a href="works/" data-rise><b>150</b><h3>Работы под ключ</h3><p>Земля, дорога, благоустройство, монтаж.</p><span>Смотреть →</span></a>
     </div>
   </div>
 </section>
 
-<!-- ────────── ОБЪЕКТЫ: бегущая лента ────────── -->
 <section class="works">
   <div class="marq" id="marq">
     <div class="marq__row">
@@ -249,51 +226,26 @@
   </div>
 </section>
 
-<!-- ────────── ПРАЙС ────────── -->
 <section class="price" id="price">
   <div class="price__head">
     <span class="secnum">04 / Прайс</span>
     <h2 class="split"><span class="ln"><i>Цены открыто</i></span></h2>
-    <p>Прайс завода от 01.09.2026 · с НДС 22% · самовывоз, Артём, Севская 44</p>
+    <p>Прайс завода от 01.09.2026 · с НДС 22% · самовывоз с площадки в Артёме</p>
   </div>
-
-  <div class="ptable" id="ptable">
-    <div class="pgroup"><span>Бордюрный камень</span></div>
-    <div class="prow2"><h4>БР 100.20.8 <i>тротуарный</i></h4><em>1000×200×80</em><b>357 — 470 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>БР 100.30.15 <i>дорожный</i></h4><em>1000×300×150</em><b>765 — 980 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>БР 100.30.18 <i>дорожный</i></h4><em>1000×300×180</em><b>1 020 — 1 370 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>БР 100.60.20 <i>мостовой</i></h4><em>1000×600×200</em><b>4 450 — 4 950 ₽<span>шт</span></b></div>
-
-    <div class="pgroup"><span>Блоки стеновые и перегородочные</span></div>
-    <div class="prow2"><h4>Отсевоблок М50</h4><em>390×190×188</em><b>90 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>Отсевоблок М75</h4><em>390×190×188</em><b>95 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>Отсевоблок М100</h4><em>390×190×188</em><b>102 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>Перегородочный 90 мм</h4><em>М50</em><b>65 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>Перегородочный 120 мм</h4><em>М50</em><b>80 ₽<span>шт</span></b></div>
-
-    <div class="pgroup"><span>Тротуарная плитка</span></div>
-    <div class="prow2"><h4>Б1.П6 <i>брусчатка</i></h4><em>серая · цветная · с крошкой</em><b>1 300 — 3 290 ₽<span>м²</span></b></div>
-    <div class="prow2"><h4>200×100×80</h4><em>серая · цветная · с крошкой</em><b>1 370 — 3 494 ₽<span>м²</span></b></div>
-    <div class="prow2"><h4>«Старый город»</h4><em>три формата в раскладке</em><b>1 370 — 3 494 ₽<span>м²</span></b></div>
-    <div class="prow2"><h4>«Новый город»</h4><em>три формата в раскладке</em><b>1 370 — 3 494 ₽<span>м²</span></b></div>
-    <div class="prow2"><h4>«Бавария»</h4><em>четыре формата</em><b>1 370 — 3 494 ₽<span>м²</span></b></div>
-
-    <div class="pgroup"><span>Вентблоки и кирпич</span></div>
-    <div class="prow2"><h4>Вентблок ВБ-3 … ВБ-6</h4><em>М75</em><b>700 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>Вентблок ВБ-7 · ВБ-8</h4><em>М75</em><b>270 · 490 ₽<span>шт</span></b></div>
-    <div class="prow2"><h4>Кирпич облицовочный</h4><em>250×120×60, серый и цветной</em><b>47 — 60 ₽<span>шт</span></b></div>
+  <div class="ptable">
+    <div class="pgroup"><span>Бордюрный камень</span></div><a class="prow2 prow2--l" href="catalog/bordyur/bordyur-br-100-30-15/"><h4>Бордюр дорожный</h4><em>1000×300×150</em><b>765 — 980 ₽<span>шт</span></b></a><a class="prow2 prow2--l" href="catalog/bordyur/bordyur-br-100-20-8/"><h4>Бордюр тротуарный</h4><em>1000×200×80</em><b>357 — 470 ₽<span>шт</span></b></a><a class="prow2 prow2--l" href="catalog/bordyur/bordyur-br-100-30-18/"><h4>Бордюр усиленный</h4><em>1000×300×180</em><b>1 020 — 1 370 ₽<span>шт</span></b></a><div class="pgroup"><span>Стеновые и перегородочные блоки</span></div><a class="prow2 prow2--l" href="catalog/bloki/otsevoblok-stenovoy-m50/"><h4>Блок стеновой М50</h4><em>390×190×188</em><b>90 ₽<span>шт</span></b></a><a class="prow2 prow2--l" href="catalog/bloki/otsevoblok-stenovoy-m75/"><h4>Блок стеновой М75</h4><em>390×190×188</em><b>95 ₽<span>шт</span></b></a><a class="prow2 prow2--l" href="catalog/bloki/otsevoblok-stenovoy-m100/"><h4>Блок стеновой М100</h4><em>390×190×188</em><b>102 ₽<span>шт</span></b></a><div class="pgroup"><span>Вентиляционные блоки</span></div><a class="prow2 prow2--l" href="catalog/ventblok/ventblok-vb-3/"><h4>ВБ-3, рядовой</h4><em>840×300×180</em><b>700 ₽<span>шт</span></b></a><a class="prow2 prow2--l" href="catalog/ventblok/ventblok-vb-4/"><h4>ВБ-4, полый</h4><em>570×300×180</em><b>700 ₽<span>шт</span></b></a><a class="prow2 prow2--l" href="catalog/ventblok/ventblok-vb-5/"><h4>ВБ-5, полый</h4><em>840×300×180</em><b>700 ₽<span>шт</span></b></a><div class="pgroup"><span>Тротуарная плитка</span></div><a class="prow2 prow2--l" href="catalog/plitka/plitka-b1-p6/"><h4>Брусчатка Б1.П6</h4><em>200×100×60</em><b>1 300 — 3 290 ₽<span>м²</span></b></a><a class="prow2 prow2--l" href="catalog/plitka/plitka-200-100-80/"><h4>Брусчатка 80 мм</h4><em>200×100×80</em><b>1 370 — 3 494 ₽<span>м²</span></b></a><a class="prow2 prow2--l" href="catalog/plitka/plitka-kvadro/"><h4>Плитка «Квадро»</h4><em>500×500×60</em><b>по запросу<span>м²</span></b></a><div class="pgroup"><span>Кирпич облицовочный</span></div><a class="prow2 prow2--l" href="catalog/kirpich/kirpich-oblitsovochnyy/"><h4>Кирпич облицовочный</h4><em>250×120×60</em><b>47 — 60 ₽<span>шт</span></b></a>
   </div>
-  <p class="price__note">Цены действуют по прайсу завода. При расхождении сайта и прайса верен прайс. Доставку по Приморью считает диспетчер под объём и адрес.</p>
+  <a class="wide-link" href="price/"><b>Весь прайс: ЗБИ, асфальт и битум</b><i>22 + 57 + 4 позиций одной страницей</i><svg viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5"/></svg></a>
 </section>
 
-<!-- ────────── КОНТАКТЫ ────────── -->
+
 <section class="contact" id="contact">
   <div class="contact__l">
     <span class="secnum">05 / Контакты</span>
     <h2 class="split"><span class="ln"><i>Позвоните</i></span><span class="ln"><i>на завод</i></span></h2>
     <div class="tels">
-      <a href="tel:+79841915064"><b>+7 984 191-50-64</b><i>завод МОНТЕ · изделия и битум</i></a>
-      <a href="tel:+79142738200"><b>+7 914 273-82-00</b><i>Стройспецтехника · асфальт, техника, работы</i></a>
+      <a href="tel:+79841915064"><b>+7 (984) 191-50-64</b><i>завод МОНТЕ · изделия и битум</i></a>
+      <a href="tel:+79142738200"><b>+7 (914) 273-82-00</b><i>Стройспецтехника · асфальт, техника, работы</i></a>
       <a href="mailto:monte@sstmonte.ru"><b>monte@sstmonte.ru</b><i>почта для заявок и счетов</i></a>
     </div>
     <div class="addr">
@@ -301,7 +253,6 @@
       <p>Пн–Пт 09:00–18:00<br>отгрузка по согласованию</p>
     </div>
   </div>
-
   <form class="form" id="form" novalidate>
     <label><span>Как к вам обращаться</span><input type="text" name="name" required></label>
     <label><span>Телефон</span><input type="tel" name="phone" required placeholder="+7"></label>
@@ -310,11 +261,37 @@
     <p class="form__note" id="formNote">Перезвоним в рабочее время. Спецификацию и счёт выставляем по номенклатуре прайса.</p>
   </form>
 </section>
-
 <footer class="foot">
+  <div class="foot__cols">
+    <div class="foot__c">
+      <span class="foot__h">Завод</span>
+      <a href="catalog/">Каталог изделий</a>
+      <a href="production/">Производство</a>
+      <a href="price/">Прайс-лист</a>
+      <a href="documents/">Документы</a>
+    </div>
+    <div class="foot__c">
+      <span class="foot__h">Дороги</span>
+      <a href="asphalt/">Асфальтобетон</a>
+      <a href="bitum/">Битумные вяжущие</a>
+      <a href="rent/">Аренда техники</a>
+      <a href="works/">Строительные работы</a>
+    </div>
+    <div class="foot__c">
+      <span class="foot__h">Связь</span>
+      <a href="tel:+79841915064">+7 (984) 191-50-64<i>завод МОНТЕ</i></a>
+      <a href="tel:+79142738200">+7 (914) 273-82-00<i>Стройспецтехника</i></a>
+      <a href="mailto:monte@sstmonte.ru">monte@sstmonte.ru</a>
+      <a href="contacts/">Адрес и реквизиты</a>
+    </div>
+    <div class="foot__c foot__c--addr">
+      <span class="foot__h">Площадка</span>
+      <p>692754, Приморский край,<br>г. Артём, ул. Севская, 44</p>
+      <p>Пн–Пт 09:00–18:00<br>отгрузка по согласованию</p>
+    </div>
+  </div>
   <div class="foot__t">
-    <span>ООО «МОНТЕ» · ИНН 2502068158 · ОГРН 1222500011381</span>
-    <span>ООО «Стройспецтехника» · ИНН 1435300629 · ОГРН 1151447010252</span>
+    <span>ООО «МОНТЕ» · ИНН 2502068158 · ОГРН 1222500011381</span><span>ООО «Стройспецтехника» · ИНН 1435300629 · ОГРН 1151447010252</span>
   </div>
   <div class="foot__b">
     <span>© 2026 Стройспецтехника МОНТЕ, Артём</span>
@@ -322,14 +299,13 @@
     <a href="#top">Наверх ↑</a>
   </div>
 </footer>
-
 </main>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
 <script src="js/scene.js"></script>
+<script src="js/spec.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
