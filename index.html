@@ -24,7 +24,7 @@
     if (!document.body.classList.contains('ready')) {
       document.body.className += ' ready degraded';
     }
-  }, 2600);
+  }, 1600);
   window.__monteBooted = function () { clearTimeout(t); };
   document.addEventListener('DOMContentLoaded', function () {
     if (typeof gsap === 'undefined') document.body.className += ' degraded';
@@ -320,8 +320,7 @@
 <script src="js/vendor/ScrollTrigger.min.js"></script>
 <script src="js/vendor/lenis.min.js"></script>
 
-<script src="js/vendor/three.min.js"></script>
-<script src="js/scene.js"></script>
+<script src="js/hero-boot.js"></script>
 <script src="js/spec.js"></script>
 <script src="js/main.js"></script>
 </body>

@@ -110,7 +110,7 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld)}</script>` : ''}
     if (!document.body.classList.contains('ready')) {
       document.body.className += ' ready degraded';
     }
-  }, 2600);
+  }, 1600);
   window.__monteBooted = function () { clearTimeout(t); };
   document.addEventListener('DOMContentLoaded', function () {
     if (typeof gsap === 'undefined') document.body.className += ' degraded';

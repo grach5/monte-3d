@@ -183,7 +183,7 @@ ${contactSection(0)}`;
       depth: 0, active: '',
       hero, body,
       
-      scripts: ['vendor/three.min.js', 'scene.js'],
+      scripts: ['hero-boot.js'],
       cls: 'p-home',
     }),
   };

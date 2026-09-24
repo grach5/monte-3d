@@ -83,9 +83,22 @@
   /* ---------- 3. Старт после прелоадера ---------- */
   function start() {
     document.body.classList.add('ready');
+    // Предохранитель мог сработать раньше, пока грузился скрипт:
+    // раз мы здесь, анимации живы и режим без них больше не нужен.
+    document.body.classList.remove('degraded');
     if (window.__monteBooted) window.__monteBooted();
     var glc = document.getElementById('gl');
     if (glc) setTimeout(function () { glc.classList.add('on'); }, 120);
+
+    if (lateBoot) {
+      // Поздний запуск: предохранитель уже показал страницу, ролик
+      // проигрывать поздно — просто закрепляем видимое состояние.
+      gsap.set('.hero__h .ln i, .phero h1 .ln i, .split .ln i', { y: '0%' });
+      gsap.set('[data-fade], [data-rise]', { opacity: 1, y: 0 });
+      heroCounts.forEach(function (t) { t.play(0); });
+      ScrollTrigger.refresh();
+      return;
+    }
 
     if (!document.querySelector('.hero__h')) {
       // Внутренние страницы: вступительного ролика нет, раскрываем заголовок раздела
@@ -107,7 +120,10 @@
     heroCounts.forEach(function (t) { t.play(0); });
     ScrollTrigger.refresh();
   }
-  gsap.set(['.hero__eyebrow', '.hero__sub', '.hero__cta'], { opacity: 0, y: 18 });
+  // Если предохранитель уже показал страницу, прятать её обратно нельзя:
+  // человек увидел бы, как контент исчезает и появляется снова.
+  var lateBoot = document.body.classList.contains('ready');
+  if (!lateBoot) gsap.set(['.hero__eyebrow', '.hero__sub', '.hero__cta'], { opacity: 0, y: 18 });
 
   /* ---------- 4. Шапка и меню ---------- */
   var nav = document.getElementById('nav');
@@ -122,7 +138,8 @@
   });
 
   /* ---------- 5. WebGL: прогресс камеры ---------- */
-  if (window.MonteScene && MonteScene.ready) {
+  function bindScene() {
+    if (!(window.MonteScene && MonteScene.ready)) return;
     ScrollTrigger.create({
       trigger: '#hero', start: 'top top', endTrigger: '#manifest', end: 'bottom top',
       scrub: true,
@@ -139,7 +156,10 @@
       onEnter: function () { MonteScene.setRunning && MonteScene.setRunning(false); },
       onLeaveBack: function () { MonteScene.setRunning && MonteScene.setRunning(true); }
     });
+    ScrollTrigger.refresh();
   }
+  bindScene();
+  window.MonteHeroReady = bindScene;
 
   /* ---------- 6. Появление блоков ---------- */
   gsap.utils.toArray('[data-rise]').forEach(function (el) {
