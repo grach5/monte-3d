@@ -96,13 +96,29 @@ export function page({ title, desc, depth = 0, active = '', crumbs = null, hero 
 <meta property="og:type" content="website">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${b}css/style.css">
 <link rel="stylesheet" href="${b}css/pages.css">
 <script type="application/ld+json">${orgLd()}</script>
 ${ld ? `<script type="application/ld+json">${JSON.stringify(ld)}</script>` : ''}
+<script>
+/* Предохранитель загрузки. Если основной скрипт по любой причине не
+   отработал — не поднялась библиотека, отключён JavaScript, ошибка в
+   браузере, — заставка снимается сама, а всё скрытое под анимацию
+   показывается. Сайт обязан открываться при любом раскладе. */
+(function () {
+  var t = setTimeout(function () {
+    if (!document.body.classList.contains('ready')) {
+      document.body.className += ' ready degraded';
+    }
+  }, 2600);
+  window.__monteBooted = function () { clearTimeout(t); };
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof gsap === 'undefined') document.body.className += ' degraded';
+  });
+})();
+</script>
+<noscript><style>.preloader{display:none}[data-fade],[data-rise]{opacity:1!important}
+.split .ln i,.hero__h .ln i,.phero h1 .ln i{transform:none!important}</style></noscript>
 </head>
 <body class="${cls}">`;
 
@@ -177,9 +193,9 @@ ${ld ? `<script type="application/ld+json">${JSON.stringify(ld)}</script>` : ''}
   </div>
 </footer>
 </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="${b}js/vendor/gsap.min.js"></script>
+<script src="${b}js/vendor/ScrollTrigger.min.js"></script>
+<script src="${b}js/vendor/lenis.min.js"></script>
 ${libs.map((u) => `<script src="${u}"></script>`).join(String.fromCharCode(10))}
 ${scripts.map((s) => `<script src="${b}js/${s}"></script>`).join('\n')}
 <script src="${b}js/spec.js"></script>

@@ -10,13 +10,29 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Отсевоблок стеновой М50 — цена завода в Артёме | МОНТЕ">
 <meta property="og:description" content="Ненагруженная кладка: заполнение каркаса, самонесущие стены, хозпостройки.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../../css/style.css">
 <link rel="stylesheet" href="../../../css/pages.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Стройспецтехника МОНТЕ","address":{"@type":"PostalAddress","addressLocality":"Артём","addressRegion":"Приморский край","streetAddress":"ул. Севская, 44","postalCode":"692754","addressCountry":"RU"},"telephone":"+79841915064","email":"monte@sstmonte.ru","subOrganization":[{"@type":"Organization","name":"ООО «МОНТЕ»","taxID":"2502068158"},{"@type":"Organization","name":"ООО «Стройспецтехника»","taxID":"1435300629"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Отсевоблок стеновой М50","sku":"otsevoblok-stenovoy-m50","description":"Ненагруженная кладка: заполнение каркаса, самонесущие стены, хозпостройки.","brand":{"@type":"Brand","name":"МОНТЕ"},"offers":{"@type":"AggregateOffer","priceCurrency":"RUB","lowPrice":90,"highPrice":90,"offerCount":1,"availability":"https://schema.org/InStock"}}</script>
+<script>
+/* Предохранитель загрузки. Если основной скрипт по любой причине не
+   отработал — не поднялась библиотека, отключён JavaScript, ошибка в
+   браузере, — заставка снимается сама, а всё скрытое под анимацию
+   показывается. Сайт обязан открываться при любом раскладе. */
+(function () {
+  var t = setTimeout(function () {
+    if (!document.body.classList.contains('ready')) {
+      document.body.className += ' ready degraded';
+    }
+  }, 2600);
+  window.__monteBooted = function () { clearTimeout(t); };
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof gsap === 'undefined') document.body.className += ' degraded';
+  });
+})();
+</script>
+<noscript><style>.preloader{display:none}[data-fade],[data-rise]{opacity:1!important}
+.split .ln i,.hero__h .ln i,.phero h1 .ln i{transform:none!important}</style></noscript>
 </head>
 <body class="p-product">
 <div class="preloader" id="preloader">
@@ -261,10 +277,11 @@
   </div>
 </footer>
 </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"></script>
+<script src="../../../js/vendor/gsap.min.js"></script>
+<script src="../../../js/vendor/ScrollTrigger.min.js"></script>
+<script src="../../../js/vendor/lenis.min.js"></script>
+
+<script src="../../../js/vendor/three.min.js"></script>
 <script src="../../../js/model.js"></script>
 <script src="../../../js/product.js"></script>
 <script src="../../../js/spec.js"></script>

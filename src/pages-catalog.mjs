@@ -334,8 +334,8 @@ ${near.length ? `
         { label: p.short || p.name },
       ],
       body: `<script>window.PRODUCT=${PJ};</script>` + body,
-      libs: ['https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js'],
-      scripts: ['model.js', 'product.js'],
+      
+      scripts: ['vendor/three.min.js', 'model.js', 'product.js'],
       ld,
       cls: 'p-product',
     }),

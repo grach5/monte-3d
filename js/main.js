@@ -6,6 +6,16 @@
   'use strict';
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Библиотека не поднялась — сайт всё равно должен открыться и работать:
+  // снимаем заставку, показываем всё скрытое, оставляем обычную прокрутку.
+  if (typeof gsap === 'undefined') {
+    document.body.className += ' ready degraded';
+    if (window.__monteBooted) window.__monteBooted();
+    var bg = document.getElementById('burger');
+    if (bg) bg.addEventListener('click', function () { document.body.classList.toggle('menu-open'); });
+    return;
+  }
   gsap.registerPlugin(ScrollTrigger);
 
   /* ---------- 1. Прелоадер ---------- */
@@ -73,6 +83,7 @@
   /* ---------- 3. Старт после прелоадера ---------- */
   function start() {
     document.body.classList.add('ready');
+    if (window.__monteBooted) window.__monteBooted();
     var glc = document.getElementById('gl');
     if (glc) setTimeout(function () { glc.classList.add('on'); }, 120);
 

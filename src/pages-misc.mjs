@@ -182,8 +182,8 @@ ${contactSection(0)}`;
       desc: 'Вибропрессованные бетонные изделия, асфальтобетон, битумные вяжущие, аренда техники и работы. Артём, Приморский край. Цены открыто.',
       depth: 0, active: '',
       hero, body,
-      libs: ['https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js'],
-      scripts: ['scene.js'],
+      
+      scripts: ['vendor/three.min.js', 'scene.js'],
       cls: 'p-home',
     }),
   };

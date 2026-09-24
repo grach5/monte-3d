@@ -7,3 +7,4 @@ shots-pm/
 tools/probe*.mjs
 tools/t-*.png
 .DS_Store
+shots-offline/
