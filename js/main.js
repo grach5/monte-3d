@@ -239,7 +239,9 @@
   var cur = document.getElementById('cursor');
   if (cur && matchMedia('(hover:hover)').matches) {
     var cx = 0, cy = 0, tx = 0, ty = 0;
-    window.addEventListener('pointermove', function (e) { tx = e.clientX; ty = e.clientY; }, { passive: true });
+    window.addEventListener('pointermove', function (e) {
+      tx = e.clientX; ty = e.clientY; cur.classList.add('live');
+    }, { passive: true });
     (function loop() { cx += (tx - cx) * .18; cy += (ty - cy) * .18;
       cur.style.transform = 'translate(' + cx + 'px,' + cy + 'px) translate(-50%,-50%)';
       requestAnimationFrame(loop); })();

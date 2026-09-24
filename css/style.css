@@ -51,7 +51,8 @@ h1,h2,h3,h4{font-weight:700;letter-spacing:-.035em;line-height:.96}
 
 /* ---------- курсор ---------- */
 .cursor{position:fixed;top:0;left:0;z-index:90;pointer-events:none;mix-blend-mode:difference;
-  transform:translate(-50%,-50%);transition:opacity .3s}
+  transform:translate(-50%,-50%);opacity:0;transition:opacity .3s}
+.cursor.live{opacity:1}
 .cursor span{display:block;width:26px;height:26px;border:1px solid #fff;border-radius:50%;
   transition:width .3s var(--ease),height .3s var(--ease),background .3s}
 .cursor.hot span{width:56px;height:56px;background:rgba(255,255,255,.9)}
