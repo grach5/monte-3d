@@ -40,7 +40,7 @@ export const pcard = (p, depth, price) => {
 <article class="pcard" data-cat="${p.cat}" data-price="${price ? price.price : 0}"
          data-search="${esc(p.name + ' ' + (p.marking || '') + ' ' + (p.short || '') + ' ' + p.size)}">
   <a class="pcard__a" href="${b}catalog/${p.cat}/${p.slug}/">
-    <span class="pcard__ph"><img src="${b}img/model/${p.slug}.png" alt="${esc(p.name)}: модель габаритов" loading="lazy"></span>
+    <span class="pcard__ph"><img src="${b}img/model/${p.slug}.webp" alt="${esc(p.name)}: модель габаритов" loading="lazy"></span>
     <span class="pcard__mark">${esc(mark)}</span>
     <h3>${esc(p.short || p.name)}</h3>
     <span class="pcard__size">${esc(p.size)} мм${p.grade ? ' · ' + esc(p.grade) : ''}</span>

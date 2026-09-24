@@ -81,7 +81,7 @@ export function home() {
         return `
       <article class="cc">
         <span class="cc__n">${String(i + 1).padStart(2, '0')}</span>
-        <div class="cc__ph"><img src="img/cut/cat-${c.slug}.png" alt="${esc(c.name)}" loading="lazy"></div>
+        <div class="cc__ph"><img src="img/cut/cat-${c.slug}.webp" alt="${esc(c.name)}" loading="lazy"></div>
         <h3>${esc(c.short)}</h3>
         <p>${esc(c.desc)}</p>
         <span class="cc__p">от ${money(min)} ₽<i>за ${esc(list[0].unit)}</i></span>

@@ -2,7 +2,8 @@
 // одинаковый ракурс и свет у всех 22 карточек.
 //   node render-models.mjs
 import { chromium } from 'playwright';
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { mkdirSync } from 'node:fs';
+import sharp from 'sharp';
 import { products } from './src/data.mjs';
 
 mkdirSync('img/model', { recursive: true });
@@ -18,7 +19,13 @@ for (const p of products) {
     slug: p.slug, cat: p.cat, dims: p.dims,
   });
   if (!data) { console.log('нет габаритов:', p.slug); continue; }
-  writeFileSync(`img/model/${p.slug}.png`, Buffer.from(data.split(',')[1], 'base64'));
+  // Обрезаем прозрачные поля и кладём webp: png с альфой весил по 300–800 КБ,
+  // и каталог из 22 карточек грузился минутами.
+  await sharp(Buffer.from(data.split(',')[1], 'base64'))
+    .trim({ threshold: 6 })
+    .resize({ width: 560, withoutEnlargement: true })
+    .webp({ quality: 82, effort: 6 })
+    .toFile(`img/model/${p.slug}.webp`);
   n++;
 }
 console.log('Отрисовано моделей:', n);

@@ -22,10 +22,15 @@ for (const d of OWNED) {
 
 const pages = [].concat(miscPages(), catalogPages(), roadPages());
 
+// Картинки отдаём в webp: рядом с каждым jpg лежит webp того же имени
+// (tools/to-webp.py). Подменяем только src — ссылки на сканы документов
+// в href остаются на оригинальном jpg.
+const toWebp = (html) => html.replace(/src="([^"]+)\.jpg"/g, 'src="$1.webp"');
+
 for (const p of pages) {
   const full = join(ROOT, p.path);
   mkdirSync(dirname(full), { recursive: true });
-  writeFileSync(full, p.html, 'utf8');
+  writeFileSync(full, toWebp(p.html), 'utf8');
 }
 
 // Карта сайта: пригодится, когда снимут noindex на боевом домене
